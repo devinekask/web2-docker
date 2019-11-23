@@ -1,0 +1,33 @@
+version: '3'
+
+services:
+  webserver-dev2:
+    build: ./docker
+    image: webserver-dev2
+    ports:
+      - "80:80"
+      - "443:433"
+    volumes:
+      - ./www:/var/www/html
+    links:
+      - mysql
+  
+  mysql:
+    image: mysql:5.7
+    ports:
+      - "3306:3306"
+    volumes:
+      - ./db:/var/lib/mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: devine4life
+
+  phpmyadmin:
+    image: phpmyadmin/phpmyadmin
+    links:
+      - mysql
+    ports:
+      - "8001:80"
+    environment:
+      MYSQL_USERNAME: root
+      MYSQL_ROOT_PASSWORD: devine4life
+      PMA_HOST: mysql
