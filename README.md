@@ -1,1 +1,1 @@
-Todo: create of folder nemed db in the root of this project
+Todo: create of folder named db in the root of this project
