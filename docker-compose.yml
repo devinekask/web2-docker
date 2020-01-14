@@ -19,6 +19,8 @@ services:
     volumes:
       - ./db:/var/lib/mysql
     environment:
+      MYSQL_SERVERNAME: localhost
+      MYSQL_USERNAME: root
       MYSQL_ROOT_PASSWORD: devine4life
 
   phpmyadmin:
@@ -28,6 +30,7 @@ services:
     ports:
       - "8001:80"
     environment:
+      MYSQL_SERVERNAME: localhost
       MYSQL_USERNAME: root
       MYSQL_ROOT_PASSWORD: devine4life
       PMA_HOST: mysql
