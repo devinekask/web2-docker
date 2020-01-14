@@ -4,3 +4,4 @@ echo "switch directory"
 cd $DIR
 echo "starting docker containers"
 docker-compose up --build
+echo "servers zijn up and running...  Gebruik Ctrl + C om af te sluiten"
