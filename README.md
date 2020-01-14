@@ -9,12 +9,13 @@ Via Docker kan je eenvoudig verschillende containers aanmaken om servers te simu
 
 ## Development2 server installeren
 * Download dit project via https://github.com/frederikduchi/development2-docker/archive/master.zip
-* Extract de zip file in de map waar je alle bestanden voor de module Developement 2 wil opslaan
+* Extract de zip file in de map waar je alle bestanden voor de module Development 2 wil opslaan
 * Je ziet een map met de naam `docker`en een map met de naam `www`.  Maak manueel nog een map aan met de naam `db`
-* Klik op het bestand `start`.  Mogelijk krijg je de melding dat het bestand niet uit de App Store komt, maar dit mag je negeren
+* Rechts klik op het bestand `start` en kies voor `open`.  Mogelijk krijg je de melding dat het bestand niet uit de App Store komt, maar dit mag je negeren en het bestand openen.
 * De Terminal zal openen en een paar minuten commando's uitvoeren.  Dit is slechts éénmalig.
 
 ## Development 2 server gebruiken
 * Open je browser en surf naar http://localhost.  Je krijgt een overzicht van de PHP installatie.
 * Alle bestanden die je in de map `www` plaatst zijn bereikbaar via http://localhost
+* Je kan de servers afsluiten via het bestand `stop`.
 
