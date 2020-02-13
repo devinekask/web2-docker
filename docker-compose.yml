@@ -28,7 +28,9 @@ services:
     links:
       - mysql
     ports:
-      - "8001:80"
+      - "8080:80"
+    volumes: 
+      - ./docker/php/php.ini:/usr/local/etc/php/php.ini
     environment:
       MYSQL_SERVERNAME: localhost
       MYSQL_USERNAME: root
