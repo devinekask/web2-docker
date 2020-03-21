@@ -1,5 +1,6 @@
 FROM php:7.3.1-apache
 
+RUN a2enmod rewrite
 RUN echo "ServerName localhost" >> /etc/apache2/apache2.conf
 
 RUN apt-get update -y && apt-get install -y libpng-dev libjpeg-dev
