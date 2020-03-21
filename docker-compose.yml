@@ -4,14 +4,16 @@ services:
   webserver-dev2:
     build: ./docker
     image: webserver-dev2
+    depends_on:
+      - composer
     ports:
       - "80:80"
       - "443:433"
     volumes:
-      - ./www:/var/www/html
+      - ./www:/var/www
     links:
       - mysql
-  
+
   mysql:
     image: mysql:5.7
     ports:
@@ -29,10 +31,15 @@ services:
       - mysql
     ports:
       - "8080:80"
-    volumes: 
+    volumes:
       - ./docker/php/php.ini:/usr/local/etc/php/php.ini
     environment:
       MYSQL_SERVERNAME: localhost
       MYSQL_USERNAME: root
       MYSQL_ROOT_PASSWORD: devine4life
       PMA_HOST: mysql
+  composer:
+    image: composer:1.9
+    command: ["composer", "install"]
+    volumes:
+      - ./www:/app
