@@ -1,7 +1,8 @@
 #!/usr/bin/env bash
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
 echo "switch directory"
-cd $DIR
+cd "$DIR"
 echo "starting docker containers"
 docker-compose up -d --build
+docker-compose exec webserver-dev2 composer install -d /var/www
 echo "servers zijn up and running..."

@@ -8,10 +8,10 @@ services:
       - "80:80"
       - "443:433"
     volumes:
-      - ./www:/var/www/html
+      - ./www:/var/www
     links:
       - mysql
-  
+
   mysql:
     image: mysql:5.7
     ports:
@@ -29,7 +29,7 @@ services:
       - mysql
     ports:
       - "8080:80"
-    volumes: 
+    volumes:
       - ./docker/php/php.ini:/usr/local/etc/php/php.ini
     environment:
       MYSQL_SERVERNAME: localhost
