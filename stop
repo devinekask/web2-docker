@@ -4,4 +4,4 @@ echo "switch directory"
 cd "$DIR"
 echo "stopping docker containers"
 docker-compose down
-echo "servers zijn down"
+echo "servers are down"

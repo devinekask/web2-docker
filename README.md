@@ -1,21 +1,22 @@
-# Doel
-Het doel van deze repository is om via [Docker](https://www.docker.com/ "Dockers Homepage") een lokale server op te zetten voor PHP development in combinatie met MySQL en PHPMyAdmin.
+# Goal
+The goal of this repo is to setup a local server for PHP development, in combination with MySQL and PHP. We'll be using [Docker](https://www.docker.com/ "Dockers Homepage") for this.
 
-# Installatie
+# Installation
 ## Docker
-Via Docker kan je eenvoudig verschillende containers aanmaken om servers te simuleren.  Onderstaande stappen tonen hoe je Docker installeert.
-* Download Docker via https://download.docker.com/mac/stable/Docker.dmg
-* Open de dmg file en volg de instructies om Docker te installeren.
+* Download Docker at https://download.docker.com/mac/stable/Docker.dmg
+* Open the dmg file en follow the instructions to install Docker on your machine.
 
-## Development2 server installeren
-* Download dit project via https://github.com/frederikduchi/development2-docker/archive/master.zip
-* Extract de zip file in de map waar je alle bestanden voor de module Development 2 wil opslaan
-* Je ziet een map met de naam `docker`en een map met de naam `www`.  Maak manueel nog een map aan met de naam `db`
-* Rechts klik op het bestand `start` en kies voor `open`.  Mogelijk krijg je de melding dat het bestand niet uit de App Store komt, maar dit mag je negeren en het bestand openen.
-* De Terminal zal openen en een paar minuten commando's uitvoeren.  Dit is slechts éénmalig.
+## Development2 server installation
+With Docker you can setup different "containers" to run specific stacks on your machine.
+* Download this project at https://github.com/devinekask/development2-docker/archive/master.zip
+* Extract the zip file into the folder where you want to keep all your files for this course
+* You'll see a folder called `docker` and a folder called `www`. Create an additional folder called `db` in the same location.
+* Right click on the `start` file and choose `open`. You might get a notification the file isn't from the App Store. You may ignore this and open the file.
+* Your Terminal should open and execute a few commands. The very first time this might take a couple of minutes.
 
-## Development 2 server gebruiken
-* Open je browser en surf naar http://localhost.  Je krijgt een overzicht van de PHP installatie.
-* Alle bestanden die je in de map `www` plaatst zijn bereikbaar via http://localhost
-* Je kan de servers afsluiten via het bestand `stop`.
+## Development 2 server usage
+Once the server is running (using the start script), you can use the server as follows:
+* Open your browser and navigate to http://localhost.  You should see an overview of your PHP installation.
+* All files and folders inside of the [www/html](www/html) folder are accessible through http://localhost
+* You can shut down the server by opening the `stop` script.
 
