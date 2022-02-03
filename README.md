@@ -1,5 +1,5 @@
 # Goal
-The goal of this repo is to setup a local server for PHP development, in combination with MySQL and PHP. We'll be using [Docker](https://www.docker.com/ "Dockers Homepage") for this.
+The goal of this repo is to setup a local server for PHP development, in combination with MariaDB and PHP. We'll be using [Docker](https://www.docker.com/ "Dockers Homepage") for this.
 
 # Installation
 ## Docker
