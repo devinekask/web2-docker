@@ -3,7 +3,7 @@ The goal of this repo is to setup a local server for PHP development, in combina
 
 # Installation
 ## Docker
-* Download Docker at https://download.docker.com/mac/stable/Docker.dmg
+* Download Docker at https://www.docker.com/get-started and select Intel or Mac chip
 * Open the dmg file en follow the instructions to install Docker on your machine.
 
 ## Web 2 server installation
