@@ -10,8 +10,8 @@ RUN docker-php-ext-install pdo pdo_mysql exif mbstring
 
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
 
-RUN pecl install xdebug
-RUN docker-php-ext-enable xdebug-3.1.5
+RUN pecl install xdebug-3.1.5
+RUN docker-php-ext-enable xdebug
 
 COPY ./php/xdebug.ini /usr/local/etc/php/conf.d/xdebug.ini
 COPY ./php/php.ini /usr/local/etc/php/conf.d/php.ini
