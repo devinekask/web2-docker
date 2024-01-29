@@ -8,7 +8,7 @@ The goal of this repo is to setup a local server for PHP development, in combina
 
 ## Web 2 server installation
 With Docker you can setup different "containers" to run specific stacks on your machine.
-* Download this project at https://github.com/devinekask/web2-docker/archive/master.zip
+* Download this project at https://github.com/devinekask/web2-docker/archive/main.zip
 * Extract the zip file into the folder where you want to keep all your files for this course
 * You'll see a folder called `docker` and a folder called `www`. Create an additional folder called `db` in the same location.
 * Right click on the `start` file and choose `open`. You might get a notification the file isn't from the App Store. You may ignore this and open the file.
