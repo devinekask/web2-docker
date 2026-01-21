@@ -1,6 +1,6 @@
 {
   "require": {
-    "illuminate/database": "8.80.0",
-    "illuminate/events": "8.80.0"
+    "illuminate/database": "^12.0",
+    "illuminate/events": "^12.0"
   }
 }
